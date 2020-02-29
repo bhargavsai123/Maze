@@ -88,7 +88,26 @@ function draw() {
   if(gamestate==="play"){
     text("Escape the Maze without touching the wall", 100, 30);
     
-    ball.velocityY=5;
+   if(keyDown("up")){
+     ball.velocityY=-3;
+     ball.velocityX=0;
+    
+   }
+   if(keyDown("down")){
+     ball.velocityY=3;
+     ball.velocityX=0;
+     
+   }
+   if(keyDown("left")){
+     ball.velocityY=0;
+     ball.velocityX=-3;
+     
+   }
+   if(keyDown("right")){
+     ball.velocityY=0;
+     ball.velocityX=3;
+     
+   }
 
 
 
